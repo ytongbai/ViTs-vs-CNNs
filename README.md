@@ -126,9 +126,9 @@ Download and extract [ImageNet-A](https://github.com/hendrycks/natural-adv-examp
 /path/to/datasets/
   val/
     class1/
-      img3.jpeg
+      img1.jpeg
     class/2
-      img4.jpeg
+      img2.jpeg
 ```
 
 ### Evaluation Scripts
