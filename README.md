@@ -1,6 +1,6 @@
 # Are Transformers More Robust Than CNNs?
 
-Pytorch implementation for NIPS 2021 Paper: [Are Transformers More Robust Than CNNs?](https://arxiv.org/pdf/2111.05464.pdf)
+Pytorch implementation for NeurIPS 2021 Paper: [Are Transformers More Robust Than CNNs?](https://arxiv.org/pdf/2111.05464.pdf)
 
 Our implementation is based on [DeiT](https://github.com/facebookresearch/deit).
 
