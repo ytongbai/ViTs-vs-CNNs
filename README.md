@@ -107,13 +107,13 @@ pip3 install -r requirements.txt
 To train a ResNet model on ImageNet run:
 
 ```bash
-bash scripts/res.sh
+bash script/res.sh
 ```
 
 To train a DeiT model on ImageNet run:
 
 ```bash
-bash scripts/deit.sh
+bash script/deit.sh
 ```
 
 ## Generalization to Out-of-Distribution Sample
@@ -136,7 +136,7 @@ Download and extract [ImageNet-A](https://github.com/hendrycks/natural-adv-examp
 To evaluate pre-trained models, run:
 
 ```bash
-bash scripts/generation_to_ood.sh
+bash script/generation_to_ood.sh
 ```
 It is worth noting that for ImageNet-C evaluation, the error rate is calculated based on the Noise, Blur, Weather and Digital categories. 
 
@@ -145,7 +145,7 @@ It is worth noting that for ImageNet-C evaluation, the error rate is calculated 
 To perform adversarial training on ResNet run:
 
 ```bash
-bash scripts/advres.sh
+bash script/advres.sh
 ```
 
 To do adversarial training on DeiT run:
@@ -162,7 +162,7 @@ bash scripts/advdeit.sh
 To evaluate the pre-trained models, run:
 
 ```bash
-bash scripts/eval_advtraining.sh
+bash script/eval_advtraining.sh
 ```
 
 
