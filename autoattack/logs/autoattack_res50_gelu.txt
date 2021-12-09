@@ -1,0 +1,719 @@
+nohup: ignoring input
+Namespace(FGSM=False, activation='gelu', alpha=0.5, already224=False, arch='resnet50', base_width=4, cardinality=32, checkpoint='/tmp/checkpoint', ckpt='./ckpt/checkpoint_noaug_sgd_step_newgbn_gelu_4096_correct/checkpoint_0099.pth', cutmix=0.0, data='./data/ImageNet', depth=29, drop=0.0, drop_path=0.1, epochs=90, eps=0.01568627450980392, evaluate=True, evaluate_imagenet_c=False, finetune=False, forward_time=8, gamma=0.1, gpu_id='7', imagenet_a=False, label_gamma=0.8, load='', lr=0.1, lr_schedule='step', manualSeed=9534, min_size=112, mixbn=False, mixup=0.0, mocov2=False, momentum=0.9, multi_grid=False, num_classes=1000, pretrain_bs=4096, resume='', schedule=[30, 60, 90], sing='singgbn', start_epoch=0, style=False, test_batch=256, train_batch=256, warm=5, warm_lr=0.0, weight_decay=0.0001, widen_factor=4, workers=8)
+./anaconda3/envs/pytorch/lib/python3.8/site-packages/torchvision/transforms/transforms.py:279: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  warnings.warn("The use of the transforms.Scale transform is deprecated, " +
+=> creating model 'resnet50'
+setting parameters for standard version
+using standard version including apgd-ce, apgd-t, fab-t, square
+initial accuracy: 67.61%
+./project/33/deit_adv/att/autoattack/autopgd_base.py:515: UserWarning: This overload of nonzero is deprecated:
+	nonzero()
+Consider using one of the following signatures instead:
+	nonzero(*, bool as_tuple) (Triggered internally at  /opt/conda/conda-bld/pytorch_1607369981906/work/torch/csrc/utils/python_arg_parser.cpp:882.)
+  ind_to_fool = acc.nonzero().squeeze()
+0.67392
+apgd-ce - 1/133 - 109 out of 256 successfully perturbed
+0.67238
+apgd-ce - 2/133 - 77 out of 256 successfully perturbed
+0.6712
+apgd-ce - 3/133 - 59 out of 256 successfully perturbed
+0.6702
+apgd-ce - 4/133 - 50 out of 256 successfully perturbed
+0.66824
+apgd-ce - 5/133 - 98 out of 256 successfully perturbed
+0.66536
+apgd-ce - 6/133 - 144 out of 256 successfully perturbed
+0.66266
+apgd-ce - 7/133 - 135 out of 256 successfully perturbed
+0.6598
+apgd-ce - 8/133 - 143 out of 256 successfully perturbed
+0.65748
+apgd-ce - 9/133 - 116 out of 256 successfully perturbed
+0.6557
+apgd-ce - 10/133 - 89 out of 256 successfully perturbed
+0.65334
+apgd-ce - 11/133 - 118 out of 256 successfully perturbed
+0.6517
+apgd-ce - 12/133 - 82 out of 256 successfully perturbed
+0.6506
+apgd-ce - 13/133 - 55 out of 256 successfully perturbed
+0.64942
+apgd-ce - 14/133 - 59 out of 256 successfully perturbed
+0.64796
+apgd-ce - 15/133 - 73 out of 256 successfully perturbed
+0.64546
+apgd-ce - 16/133 - 125 out of 256 successfully perturbed
+0.64308
+apgd-ce - 17/133 - 119 out of 256 successfully perturbed
+0.63978
+apgd-ce - 18/133 - 165 out of 256 successfully perturbed
+0.63844
+apgd-ce - 19/133 - 67 out of 256 successfully perturbed
+0.63696
+apgd-ce - 20/133 - 74 out of 256 successfully perturbed
+0.63536
+apgd-ce - 21/133 - 80 out of 256 successfully perturbed
+0.634
+apgd-ce - 22/133 - 68 out of 256 successfully perturbed
+0.6317
+apgd-ce - 23/133 - 115 out of 256 successfully perturbed
+0.62936
+apgd-ce - 24/133 - 117 out of 256 successfully perturbed
+0.6262
+apgd-ce - 25/133 - 158 out of 256 successfully perturbed
+0.62364
+apgd-ce - 26/133 - 128 out of 256 successfully perturbed
+0.62078
+apgd-ce - 27/133 - 143 out of 256 successfully perturbed
+0.61798
+apgd-ce - 28/133 - 140 out of 256 successfully perturbed
+0.61526
+apgd-ce - 29/133 - 136 out of 256 successfully perturbed
+0.61176
+apgd-ce - 30/133 - 175 out of 256 successfully perturbed
+0.60906
+apgd-ce - 31/133 - 135 out of 256 successfully perturbed
+0.60638
+apgd-ce - 32/133 - 134 out of 256 successfully perturbed
+0.6041
+apgd-ce - 33/133 - 114 out of 256 successfully perturbed
+0.60128
+apgd-ce - 34/133 - 141 out of 256 successfully perturbed
+0.59916
+apgd-ce - 35/133 - 106 out of 256 successfully perturbed
+0.59692
+apgd-ce - 36/133 - 112 out of 256 successfully perturbed
+0.5948
+apgd-ce - 37/133 - 106 out of 256 successfully perturbed
+0.592
+apgd-ce - 38/133 - 140 out of 256 successfully perturbed
+0.58988
+apgd-ce - 39/133 - 106 out of 256 successfully perturbed
+0.58732
+apgd-ce - 40/133 - 128 out of 256 successfully perturbed
+0.58506
+apgd-ce - 41/133 - 113 out of 256 successfully perturbed
+0.58346
+apgd-ce - 42/133 - 80 out of 256 successfully perturbed
+0.58156
+apgd-ce - 43/133 - 95 out of 256 successfully perturbed
+0.57914
+apgd-ce - 44/133 - 121 out of 256 successfully perturbed
+0.57632
+apgd-ce - 45/133 - 141 out of 256 successfully perturbed
+0.57486
+apgd-ce - 46/133 - 73 out of 256 successfully perturbed
+0.57344
+apgd-ce - 47/133 - 71 out of 256 successfully perturbed
+0.57118
+apgd-ce - 48/133 - 113 out of 256 successfully perturbed
+0.56922
+apgd-ce - 49/133 - 98 out of 256 successfully perturbed
+0.56614
+apgd-ce - 50/133 - 154 out of 256 successfully perturbed
+0.564
+apgd-ce - 51/133 - 107 out of 256 successfully perturbed
+0.56158
+apgd-ce - 52/133 - 121 out of 256 successfully perturbed
+0.5591
+apgd-ce - 53/133 - 124 out of 256 successfully perturbed
+0.55656
+apgd-ce - 54/133 - 127 out of 256 successfully perturbed
+0.5544
+apgd-ce - 55/133 - 108 out of 256 successfully perturbed
+0.55248
+apgd-ce - 56/133 - 96 out of 256 successfully perturbed
+0.55066
+apgd-ce - 57/133 - 91 out of 256 successfully perturbed
+0.54878
+apgd-ce - 58/133 - 94 out of 256 successfully perturbed
+0.54654
+apgd-ce - 59/133 - 112 out of 256 successfully perturbed
+0.54454
+apgd-ce - 60/133 - 100 out of 256 successfully perturbed
+0.5427
+apgd-ce - 61/133 - 92 out of 256 successfully perturbed
+0.54046
+apgd-ce - 62/133 - 112 out of 256 successfully perturbed
+0.5383
+apgd-ce - 63/133 - 108 out of 256 successfully perturbed
+0.53618
+apgd-ce - 64/133 - 106 out of 256 successfully perturbed
+0.53388
+apgd-ce - 65/133 - 115 out of 256 successfully perturbed
+0.53178
+apgd-ce - 66/133 - 105 out of 256 successfully perturbed
+0.53022
+apgd-ce - 67/133 - 78 out of 256 successfully perturbed
+0.5279
+apgd-ce - 68/133 - 116 out of 256 successfully perturbed
+0.52572
+apgd-ce - 69/133 - 109 out of 256 successfully perturbed
+0.52356
+apgd-ce - 70/133 - 108 out of 256 successfully perturbed
+0.52136
+apgd-ce - 71/133 - 110 out of 256 successfully perturbed
+0.51902
+apgd-ce - 72/133 - 117 out of 256 successfully perturbed
+0.51646
+apgd-ce - 73/133 - 128 out of 256 successfully perturbed
+0.51452
+apgd-ce - 74/133 - 97 out of 256 successfully perturbed
+0.51238
+apgd-ce - 75/133 - 107 out of 256 successfully perturbed
+0.51082
+apgd-ce - 76/133 - 78 out of 256 successfully perturbed
+0.50886
+apgd-ce - 77/133 - 98 out of 256 successfully perturbed
+0.50746
+apgd-ce - 78/133 - 70 out of 256 successfully perturbed
+0.50534
+apgd-ce - 79/133 - 106 out of 256 successfully perturbed
+0.50376
+apgd-ce - 80/133 - 79 out of 256 successfully perturbed
+0.50148
+apgd-ce - 81/133 - 114 out of 256 successfully perturbed
+0.49932
+apgd-ce - 82/133 - 108 out of 256 successfully perturbed
+0.49692
+apgd-ce - 83/133 - 120 out of 256 successfully perturbed
+0.49534
+apgd-ce - 84/133 - 79 out of 256 successfully perturbed
+0.49352
+apgd-ce - 85/133 - 91 out of 256 successfully perturbed
+0.49174
+apgd-ce - 86/133 - 89 out of 256 successfully perturbed
+0.48944
+apgd-ce - 87/133 - 115 out of 256 successfully perturbed
+0.48736
+apgd-ce - 88/133 - 104 out of 256 successfully perturbed
+0.48516
+apgd-ce - 89/133 - 110 out of 256 successfully perturbed
+0.48276
+apgd-ce - 90/133 - 120 out of 256 successfully perturbed
+0.48048
+apgd-ce - 91/133 - 114 out of 256 successfully perturbed
+0.47796
+apgd-ce - 92/133 - 126 out of 256 successfully perturbed
+0.4764
+apgd-ce - 93/133 - 78 out of 256 successfully perturbed
+0.47438
+apgd-ce - 94/133 - 101 out of 256 successfully perturbed
+0.47258
+apgd-ce - 95/133 - 90 out of 256 successfully perturbed
+0.4705
+apgd-ce - 96/133 - 104 out of 256 successfully perturbed
+0.46826
+apgd-ce - 97/133 - 112 out of 256 successfully perturbed
+0.46654
+apgd-ce - 98/133 - 86 out of 256 successfully perturbed
+0.46436
+apgd-ce - 99/133 - 109 out of 256 successfully perturbed
+0.4626
+apgd-ce - 100/133 - 88 out of 256 successfully perturbed
+0.46022
+apgd-ce - 101/133 - 119 out of 256 successfully perturbed
+0.45812
+apgd-ce - 102/133 - 105 out of 256 successfully perturbed
+0.45604
+apgd-ce - 103/133 - 104 out of 256 successfully perturbed
+0.454
+apgd-ce - 104/133 - 102 out of 256 successfully perturbed
+0.45156
+apgd-ce - 105/133 - 122 out of 256 successfully perturbed
+0.44942
+apgd-ce - 106/133 - 107 out of 256 successfully perturbed
+0.44732
+apgd-ce - 107/133 - 105 out of 256 successfully perturbed
+0.44534
+apgd-ce - 108/133 - 99 out of 256 successfully perturbed
+0.44346
+apgd-ce - 109/133 - 94 out of 256 successfully perturbed
+0.44146
+apgd-ce - 110/133 - 100 out of 256 successfully perturbed
+0.43914
+apgd-ce - 111/133 - 116 out of 256 successfully perturbed
+0.43672
+apgd-ce - 112/133 - 121 out of 256 successfully perturbed
+0.43404
+apgd-ce - 113/133 - 134 out of 256 successfully perturbed
+0.4321
+apgd-ce - 114/133 - 97 out of 256 successfully perturbed
+0.42976
+apgd-ce - 115/133 - 117 out of 256 successfully perturbed
+0.4275
+apgd-ce - 116/133 - 113 out of 256 successfully perturbed
+0.42588
+apgd-ce - 117/133 - 81 out of 256 successfully perturbed
+0.4239
+apgd-ce - 118/133 - 99 out of 256 successfully perturbed
+0.42168
+apgd-ce - 119/133 - 111 out of 256 successfully perturbed
+0.41988
+apgd-ce - 120/133 - 90 out of 256 successfully perturbed
+0.4175
+apgd-ce - 121/133 - 119 out of 256 successfully perturbed
+0.41586
+apgd-ce - 122/133 - 82 out of 256 successfully perturbed
+0.41304
+apgd-ce - 123/133 - 141 out of 256 successfully perturbed
+0.4106
+apgd-ce - 124/133 - 122 out of 256 successfully perturbed
+0.40796
+apgd-ce - 125/133 - 132 out of 256 successfully perturbed
+0.40628
+apgd-ce - 126/133 - 84 out of 256 successfully perturbed
+0.40426
+apgd-ce - 127/133 - 101 out of 256 successfully perturbed
+0.40144
+apgd-ce - 128/133 - 141 out of 256 successfully perturbed
+0.39912
+apgd-ce - 129/133 - 116 out of 256 successfully perturbed
+0.39782
+apgd-ce - 130/133 - 65 out of 256 successfully perturbed
+0.39648
+apgd-ce - 131/133 - 67 out of 256 successfully perturbed
+0.3947
+apgd-ce - 132/133 - 89 out of 256 successfully perturbed
+0.39454
+apgd-ce - 133/133 - 8 out of 13 successfully perturbed
+robust accuracy after APGD-CE: 39.45% (total time 5546.4 s)
+0.39396
+apgd-t - 1/78 - 29 out of 256 successfully perturbed
+0.39386
+apgd-t - 2/78 - 5 out of 256 successfully perturbed
+0.39362
+apgd-t - 3/78 - 12 out of 256 successfully perturbed
+0.3931
+apgd-t - 4/78 - 26 out of 256 successfully perturbed
+0.39254
+apgd-t - 5/78 - 28 out of 256 successfully perturbed
+0.39202
+apgd-t - 6/78 - 26 out of 256 successfully perturbed
+0.39166
+apgd-t - 7/78 - 18 out of 256 successfully perturbed
+0.39146
+apgd-t - 8/78 - 10 out of 256 successfully perturbed
+0.39134
+apgd-t - 9/78 - 6 out of 256 successfully perturbed
+0.39088
+apgd-t - 10/78 - 23 out of 256 successfully perturbed
+0.39028
+apgd-t - 11/78 - 30 out of 256 successfully perturbed
+0.38994
+apgd-t - 12/78 - 17 out of 256 successfully perturbed
+0.38974
+apgd-t - 13/78 - 10 out of 256 successfully perturbed
+0.38942
+apgd-t - 14/78 - 16 out of 256 successfully perturbed
+0.38862
+apgd-t - 15/78 - 40 out of 256 successfully perturbed
+0.38776
+apgd-t - 16/78 - 43 out of 256 successfully perturbed
+0.38692
+apgd-t - 17/78 - 42 out of 256 successfully perturbed
+0.38618
+apgd-t - 18/78 - 37 out of 256 successfully perturbed
+0.38542
+apgd-t - 19/78 - 38 out of 256 successfully perturbed
+0.38462
+apgd-t - 20/78 - 40 out of 256 successfully perturbed
+0.38426
+apgd-t - 21/78 - 18 out of 256 successfully perturbed
+0.38386
+apgd-t - 22/78 - 20 out of 256 successfully perturbed
+0.3833
+apgd-t - 23/78 - 28 out of 256 successfully perturbed
+0.38276
+apgd-t - 24/78 - 27 out of 256 successfully perturbed
+0.3824
+apgd-t - 25/78 - 18 out of 256 successfully perturbed
+0.38194
+apgd-t - 26/78 - 23 out of 256 successfully perturbed
+0.3816
+apgd-t - 27/78 - 17 out of 256 successfully perturbed
+0.3812
+apgd-t - 28/78 - 20 out of 256 successfully perturbed
+0.38056
+apgd-t - 29/78 - 32 out of 256 successfully perturbed
+0.38008
+apgd-t - 30/78 - 24 out of 256 successfully perturbed
+0.37944
+apgd-t - 31/78 - 32 out of 256 successfully perturbed
+0.37902
+apgd-t - 32/78 - 21 out of 256 successfully perturbed
+0.3786
+apgd-t - 33/78 - 21 out of 256 successfully perturbed
+0.37808
+apgd-t - 34/78 - 26 out of 256 successfully perturbed
+0.3776
+apgd-t - 35/78 - 24 out of 256 successfully perturbed
+0.3772
+apgd-t - 36/78 - 20 out of 256 successfully perturbed
+0.3767
+apgd-t - 37/78 - 25 out of 256 successfully perturbed
+0.37618
+apgd-t - 38/78 - 26 out of 256 successfully perturbed
+0.37544
+apgd-t - 39/78 - 37 out of 256 successfully perturbed
+0.37502
+apgd-t - 40/78 - 21 out of 256 successfully perturbed
+0.3743
+apgd-t - 41/78 - 36 out of 256 successfully perturbed
+0.3737
+apgd-t - 42/78 - 30 out of 256 successfully perturbed
+0.3733
+apgd-t - 43/78 - 20 out of 256 successfully perturbed
+0.3729
+apgd-t - 44/78 - 20 out of 256 successfully perturbed
+0.37258
+apgd-t - 45/78 - 16 out of 256 successfully perturbed
+0.3721
+apgd-t - 46/78 - 24 out of 256 successfully perturbed
+0.37136
+apgd-t - 47/78 - 37 out of 256 successfully perturbed
+0.37076
+apgd-t - 48/78 - 30 out of 256 successfully perturbed
+0.3704
+apgd-t - 49/78 - 18 out of 256 successfully perturbed
+0.36974
+apgd-t - 50/78 - 33 out of 256 successfully perturbed
+0.36924
+apgd-t - 51/78 - 25 out of 256 successfully perturbed
+0.36862
+apgd-t - 52/78 - 31 out of 256 successfully perturbed
+0.36786
+apgd-t - 53/78 - 38 out of 256 successfully perturbed
+0.36738
+apgd-t - 54/78 - 24 out of 256 successfully perturbed
+0.36672
+apgd-t - 55/78 - 33 out of 256 successfully perturbed
+0.36618
+apgd-t - 56/78 - 27 out of 256 successfully perturbed
+0.36578
+apgd-t - 57/78 - 20 out of 256 successfully perturbed
+0.3655
+apgd-t - 58/78 - 14 out of 256 successfully perturbed
+0.36498
+apgd-t - 59/78 - 26 out of 256 successfully perturbed
+0.36444
+apgd-t - 60/78 - 27 out of 256 successfully perturbed
+0.36372
+apgd-t - 61/78 - 36 out of 256 successfully perturbed
+0.36314
+apgd-t - 62/78 - 29 out of 256 successfully perturbed
+0.3628
+apgd-t - 63/78 - 17 out of 256 successfully perturbed
+0.36216
+apgd-t - 64/78 - 32 out of 256 successfully perturbed
+0.36164
+apgd-t - 65/78 - 26 out of 256 successfully perturbed
+0.36104
+apgd-t - 66/78 - 30 out of 256 successfully perturbed
+0.36054
+apgd-t - 67/78 - 25 out of 256 successfully perturbed
+0.36
+apgd-t - 68/78 - 27 out of 256 successfully perturbed
+0.35924
+apgd-t - 69/78 - 38 out of 256 successfully perturbed
+0.3585
+apgd-t - 70/78 - 37 out of 256 successfully perturbed
+0.35814
+apgd-t - 71/78 - 18 out of 256 successfully perturbed
+0.35746
+apgd-t - 72/78 - 34 out of 256 successfully perturbed
+0.35708
+apgd-t - 73/78 - 19 out of 256 successfully perturbed
+0.35668
+apgd-t - 74/78 - 20 out of 256 successfully perturbed
+0.35586
+apgd-t - 75/78 - 41 out of 256 successfully perturbed
+0.3556
+apgd-t - 76/78 - 13 out of 256 successfully perturbed
+0.35526
+apgd-t - 77/78 - 17 out of 256 successfully perturbed
+0.35514
+apgd-t - 78/78 - 6 out of 15 successfully perturbed
+robust accuracy after APGD-T: 35.51% (total time 33111.8 s)
+0.35514
+fab-t - 1/70 - 0 out of 256 successfully perturbed
+0.35514
+fab-t - 2/70 - 0 out of 256 successfully perturbed
+0.35514
+fab-t - 3/70 - 0 out of 256 successfully perturbed
+0.35514
+fab-t - 4/70 - 0 out of 256 successfully perturbed
+0.35514
+fab-t - 5/70 - 0 out of 256 successfully perturbed
+0.35514
+fab-t - 6/70 - 0 out of 256 successfully perturbed
+0.35514
+fab-t - 7/70 - 0 out of 256 successfully perturbed
+0.35514
+fab-t - 8/70 - 0 out of 256 successfully perturbed
+0.35514
+fab-t - 9/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 10/70 - 2 out of 256 successfully perturbed
+0.3551
+fab-t - 11/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 12/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 13/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 14/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 15/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 16/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 17/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 18/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 19/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 20/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 21/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 22/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 23/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 24/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 25/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 26/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 27/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 28/70 - 0 out of 256 successfully perturbed
+0.3551
+fab-t - 29/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 30/70 - 1 out of 256 successfully perturbed
+0.35508
+fab-t - 31/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 32/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 33/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 34/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 35/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 36/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 37/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 38/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 39/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 40/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 41/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 42/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 43/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 44/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 45/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 46/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 47/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 48/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 49/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 50/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 51/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 52/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 53/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 54/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 55/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 56/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 57/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 58/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 59/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 60/70 - 0 out of 256 successfully perturbed
+0.35508
+fab-t - 61/70 - 0 out of 256 successfully perturbed
+0.35506
+fab-t - 62/70 - 1 out of 256 successfully perturbed
+0.35506
+fab-t - 63/70 - 0 out of 256 successfully perturbed
+0.35506
+fab-t - 64/70 - 0 out of 256 successfully perturbed
+0.35506
+fab-t - 65/70 - 0 out of 256 successfully perturbed
+0.35506
+fab-t - 66/70 - 0 out of 256 successfully perturbed
+0.35506
+fab-t - 67/70 - 0 out of 256 successfully perturbed
+0.35506
+fab-t - 68/70 - 0 out of 256 successfully perturbed
+0.35506
+fab-t - 69/70 - 0 out of 256 successfully perturbed
+0.35506
+fab-t - 70/70 - 0 out of 93 successfully perturbed
+robust accuracy after FAB-T: 35.51% (total time 84998.0 s)
+0.35506
+square - 1/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 2/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 3/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 4/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 5/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 6/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 7/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 8/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 9/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 10/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 11/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 12/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 13/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 14/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 15/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 16/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 17/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 18/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 19/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 20/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 21/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 22/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 23/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 24/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 25/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 26/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 27/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 28/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 29/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 30/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 31/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 32/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 33/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 34/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 35/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 36/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 37/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 38/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 39/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 40/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 41/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 42/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 43/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 44/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 45/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 46/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 47/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 48/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 49/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 50/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 51/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 52/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 53/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 54/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 55/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 56/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 57/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 58/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 59/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 60/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 61/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 62/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 63/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 64/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 65/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 66/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 67/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 68/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 69/70 - 0 out of 256 successfully perturbed
+0.35506
+square - 70/70 - 0 out of 256 successfully perturbed
+0.35506

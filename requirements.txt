@@ -1,0 +1,4 @@
+pytorch
+torchvision
+tensorboardX
+timm==0.3.2

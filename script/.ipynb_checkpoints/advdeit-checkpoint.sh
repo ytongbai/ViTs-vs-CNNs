@@ -1,0 +1,1 @@
+python -m torch.distributed.launch --nproc_per_node=8 --master_port=5672  --use_env main_adv_deit.py --model deit_small_patch16_224_adv --batch-size 128 --data-path /mnt/sdb/meijieru/imagenet --attack-iter 1 --attack-epsilon 4 --attack-step-size 4 --epoch 100  --reprob 0  --no-repeated-aug --sing singln  --drop 0 --drop-path 0 --start_epoch 0 --warmup-epochs 10 --cutmix 0
